@@ -1,0 +1,5 @@
+Files Description:
+1. extractInProceedings.py     :  extract all inproceedings from dblp.xml to data/2014/2014inproceedings.xml
+2. extractByYear.py            :  extract inproceedings from data/2014/2014inproceedings.xml by year
+
+
