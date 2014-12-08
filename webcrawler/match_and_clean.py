@@ -1,5 +1,10 @@
 # match the author name with the dblp data
 # and make the name accord with each other
+# first use original_authors_info.txt to replace the file in infile2,
+# and revise the original to match the author name with dblp by hand
+# and rename the original file to hand_revised_authors_info.txt
+# and execute this script
+
 from bs4 import BeautifulSoup
 import requests
 import codecs
@@ -15,7 +20,7 @@ for line in infile1:
 infile1.close()
 
 infile2 = open("hand_revised_authors_info.txt","r")
-outfile = codecs.open('revised_authors_info.txt','w')
+outfile = codecs.open('program_revised_authors_info.txt','w')
 for line in infile2:
     fields = line.strip().split('|')
     if fields[0] not in authors_dict:
