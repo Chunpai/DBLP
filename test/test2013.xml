@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE dblp SYSTEM "../data/dblp.dtd">
+<dblp>
+
+<inproceedings>
+<author>Ammar Mechouche</author>
+<author>Nathalie Abadie</author>
+<author>Emeric Prouteau</author>
+<author>Sébastien Mustière</author>
+<title>Ontology-Based Formal Specifications for User-Friendly Geospatial Data Discovery.</title>
+<pages>151-176</pages>
+<year>2009</year>
+<booktitle>EGC (best of volume)</booktitle>
+<ee>http://dx.doi.org/10.1007/978-3-642-35855-5_8</ee>
+<crossref>series/sci/2013-471</crossref>
+<url>db/series/sci/sci471.html#MechoucheAPM13</url>
+</inproceedings>
+
+<inproceedings>
+<author>Dominique Gay</author>
+<author>Marc Boullé</author>
+<title>A Bayesian Criterion for Evaluating the Robustness of Classification Rules in Binary Data Sets.</title>
+<pages>3-21</pages>
+<year>2010</year>
+<booktitle>EGC (best of volume)</booktitle>
+<ee>http://dx.doi.org/10.1007/978-3-642-35855-5_1</ee>
+<crossref>series/sci/2013-471</crossref>
+<url>db/series/sci/sci471.html#GayB13</url>
+</inproceedings>
+
+<inproceedings>
+<author>Julien Rabatel</author>
+<author>Sandra Bringay</author>
+<author>Pascal Poncelet</author>
+<title>Mining Sequential Patterns: A Context-Aware Approach.</title>
+<pages>23-41</pages>
+<year>2011</year>
+<booktitle>EGC (best of volume)</booktitle>
+<ee>http://dx.doi.org/10.1007/978-3-642-35855-5_2</ee>
+<crossref>series/sci/2013-471</crossref>
+<url>db/series/sci/sci471.html#RabatelBP13</url>
+</inproceedings>
+
+</dblp>
