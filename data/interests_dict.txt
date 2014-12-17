@@ -1,0 +1,125 @@
+0|Algorithms & Theory
+1|Scientific Computing
+2|Data Mining
+3|Databases
+4|Software Engineering
+5|Bioinformatics & Computational Biology
+6|Security & Privacy
+7|Computer Vision
+8|Networks & Communications
+9|Control & Optimization
+10|Microbiology
+11|Diseases
+12|Discrete Mathematics
+13|Programming Languages
+14|Distributed & Parallel Computing
+15|Artificial Intelligence
+16|World Wide Web
+17|Real-Time & Embedded Systems
+18|Machine Learning & Pattern Recognition
+19|Electrical & Electronic Engineering
+20|Algebra
+21|Plant & Animal Science
+22|Probability
+23|Mathematical Analysis
+24|Nuclear Physics
+25|Topology
+26|Geometry
+27|Astrophysics & Space Science
+28|Human-Computer Interaction
+29|Chemical Engineering
+30|Biochemistry
+31|Graphics
+32|Natural Language & Speech
+33|Information Retrieval
+34|Computer Education
+35|Operating Systems
+36|Anatomy
+37|Engineering
+38|Mathematics Education
+39|Atomic & Molecular Physics
+40|Geophysics
+41|Hardware & Architecture
+42|Physics
+43|Pharmacology
+44|Multimedia
+45|Energy
+46|Arts & Humanities
+47|Simulation
+48|History
+49|Radiation
+50|Chemistry
+51|Industrial Engineering
+52|Mechanical Engineering
+53|Neuroscience
+54|Urology
+55|Oncology
+56|Endocrinology
+57|Emergency & Critical Care
+58|Medicine
+59|Statistical Physics
+60|Performance Art
+61|Chemical Physics & Material Physics
+62|Virology
+63|Psychiatry & Psychology
+64|Climate Research
+65|Business Administration & Economics
+66|Cardiology
+67|Ophthalmology
+68|Meteorology
+69|Economics & Business
+70|Organic Chemistry
+71|Condensed Matter Physics
+72|Statistics
+73|Library Science
+74|Biomedical Engineering
+75|Mathematics
+76|Methodology of Social Science
+77|Education
+78|Social Science
+79|Computational Chemistry
+80|Applied Chemistry
+81|Sociology
+82|Civil Engineering
+83|Ecology
+84|Gynecology & Obstetrics
+85|Environmental Sciences
+86|Physiology
+87|Optics & Optoelectronics
+88|Aeronautics & Aerospace Engineering
+89|Genetics & Genealogy
+90|Cell Biology
+91|Dermatology
+92|Family Medicine
+93|Dentistry
+94|Pollution
+95|Analytical Chemistry
+96|Computational Physics
+97|Mathematical Physics
+98|Geosciences
+99|Nanotechnology
+100|Material Science
+101|Hydrology
+102|Petroleum
+103|Communication
+104|Geology
+105|Anthropology
+106|Nuclear Engineering
+107|Manufacturing Technology
+108|Financial Economics
+109|Political Science
+110|Mathematical Modelling
+111|Polymer Chemistry
+112|Mathematical & Quantitative Methods
+113|Nuclear Magnetic Resonance
+114|Nuclear Energy
+115|Immunology
+116|Biotechnology
+117|Construction
+118|Molecular Biology
+119|Evolutionary Studies
+120|New Materials
+121|Biophysics
+122|Biology
+123|Pathology
+124|Law & Criminology
