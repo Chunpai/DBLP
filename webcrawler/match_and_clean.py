@@ -31,10 +31,14 @@ for line in infile2:
         else:
             fields[0] = dblp_author_name     
             for field in fields:
-                outfile.write(field+'|')
+                if field != '':
+                    outfile.write(field+'|')
             outfile.write('\n')
     else:
-        outfile.write(line)
+        for field in fields:
+            if field != '':
+                outfile.write(field+'|')
+        outfile.write('\n')
 
 infile2.close()
 outfile.close()

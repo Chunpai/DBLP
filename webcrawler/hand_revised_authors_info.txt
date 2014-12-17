@@ -234,7 +234,7 @@ Miodrag Potkonjak|University of California Los Angeles|Publications: 446|Citatio
 Majid Sarrafzadeh|University of California Los Angeles|Publications: 434|Citations: 5069|Hardware & Architecture|Algorithms & Theory|Networks & Communications||
 Yale N. Patt|University of Texas Austin|Publications: 310|Citations: 6495|Hardware & Architecture|Distributed & Parallel Computing|Operating Systems||
 Janak H. Patel|University of Illinois Urbana Champaign|Publications: 256|Citations: 7066|Hardware & Architecture|Distributed & Parallel Computing|Software Engineering||
-Wen-mei W. Hwu|University of Illinois Urbana Champaign|Publications: 302|Citations: 6501|Arts & Humanities||
+Wen-mei W. Hwu|University of Illinois Urbana Champaign|Publications: 302|Citations: 6501|Hardware & Architecture|Distributed & Parallel Computing|Software Engineering||
 Gary D. Hachtel|University of Colorado Boulder|Publications: 158|Citations: 6084|Hardware & Architecture|Software Engineering|Electrical & Electronic Engineering||
 Irith Pomeranz|Purdue University|Publications: 552|Citations: 5563|Hardware & Architecture|Software Engineering|Distributed & Parallel Computing||
 Krishnendu Chakrabarty|Duke University|Publications: 499|Citations: 7265|Hardware & Architecture|Software Engineering|Electrical & Electronic Engineering||
@@ -598,7 +598,7 @@ Andrew G. Barto|University of Massachusetts|Publications: 181|Citations: 13751|M
 Ralf Herbrich|Microsoft|Publications: 105|Citations: 2287|Machine Learning & Pattern Recognition|Natural Language & Speech|Artificial Intelligence||
 OLIVIER CHAPELLE|Yahoo Research Labs|Publications: 89|Citations: 3553|Machine Learning & Pattern Recognition|Natural Language & Speech|Information Retrieval||
 Thomas Hofmann|Google Inc.|Publications: 147|Citations: 6895|Machine Learning & Pattern Recognition|Artificial Intelligence|Natural Language & Speech||
-Jiawei Han|University of Illinois Urbana Champaign|Publications: 655|Citations: 28942|Economics & Business|Engineering||
+Jiawei Han|University of Illinois Urbana Champaign|Publications: 655|Citations: 28942|Data Mining|Machine Learning & Pattern Recognition|Engineering||
 Philip S. Yu|University of Illinois Chicago|Publications: 788|Citations: 18005|Data Mining|Databases|Distributed & Parallel Computing||
 Rakesh Agrawal|Microsoft|Publications: 359|Citations: 33536|Databases|Data Mining|World Wide Web||
 Christos Faloutsos|Carnegie Mellon University|Publications: 484|Citations: 19778|Data Mining|Databases|Information Retrieval||
@@ -1707,7 +1707,7 @@ Michael J. Carey|University of California Irvine|Publications: 488|Citations: 11
 Dan Suciu|University of Washington|Publications: 285|Citations: 11815|Databases|Data Mining|Scientific Computing||
 Rakesh Agrawal|Microsoft|Publications: 359|Citations: 33536|Databases|Data Mining|World Wide Web||
 Serge Abiteboul|The French National Institute for Research in Computer Science and Control|Publications: 320|Citations: 14335|Databases|Algorithms & Theory|Data Mining||
-Jiawei Han|University of Illinois Urbana Champaign|Publications: 655|Citations: 28942|Economics & Business|Engineering||
+Jiawei Han|University of Illinois Urbana Champaign|Publications: 655|Citations: 28942|Data Mining|Machine Learning & Pattern Recognition|Engineering||
 H. V. Jagadish|University of Michigan|Publications: 303|Citations: 10127|Databases|Data Mining|Hardware & Architecture||
 Christos Faloutsos|Carnegie Mellon University|Publications: 484|Citations: 19778|Data Mining|Databases|Information Retrieval||
 Raghu Ramakrishnan|Microsoft|Publications: 351|Citations: 11495|Databases|Data Mining|Programming Languages||
