@@ -19,7 +19,8 @@ class inProceedingsHandler(xml.sax.handler.ContentHandler):
         self.index = 0
         self.author_list  = [] #store authors for one paper
         self.authors_dict = authors_dict #author name is key, index is value
-        self.outfile = open('data/partitions/'+str(year-3)+'_'+str(year)+'_edgelist.txt','w')
+        self.outfile = open('data/'+str(year)+'_edgelist.txt','w')
+
 
     #starting tag of an element, use this function to check the scanning position
     def startElement(self, name, attrs):
@@ -27,7 +28,8 @@ class inProceedingsHandler(xml.sax.handler.ContentHandler):
             self.isInProceedings = 1
         if name == 'author':
             self.isAuthor = 1
-    
+   
+
     #ending tag of an element, use this function to check the scanning position
     def endElement(self,name):
         if name == 'inproceedings':
@@ -46,7 +48,8 @@ class inProceedingsHandler(xml.sax.handler.ContentHandler):
                 raise SyntaxError('dictionary error')
             self.isAuthor = 0
             self.authorName = ''
-    
+   
+
     #write content in <author> and </author>
     def characters(self,content):
         if self.isAuthor == 1:     
@@ -72,12 +75,10 @@ class inProceedingsHandler(xml.sax.handler.ContentHandler):
 
 
 if __name__ == '__main__':
-    """
-    """
     #authors_dict = build_authors_dict()
     for year in reversed(xrange(1994,2015,4)):
         authors_dict = {}
-        infile = codecs.open('data/partitions/'+str(year-3)+'_'+str(year)+'_authors.txt','r','utf-8')
+        infile = codecs.open('data/'+str(year)+'_authors.txt','r','utf-8')
         infile.readline()
         for line in infile:
             fields = line.strip().split('|')
@@ -88,7 +89,7 @@ if __name__ == '__main__':
                 print authors_dict[fields[1]]
         print len(authors_dict)
         inProceedings = inProceedingsHandler(authors_dict,year)
-        source = open('data/partitions/'+str(year-3)+'_'+str(year)+'_inproceedings.xml','r')
+        source = open('../data/'+str(year)+'/inproceedings.xml','r')
         xml.sax.parse(source, inProceedings)
         inProceedings.close_file()
     

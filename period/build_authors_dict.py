@@ -75,7 +75,7 @@ class inProceedingsHandler(xml.sax.handler.ContentHandler):
 
 
 def read_authors_dict():
-    infile = codecs.open("data/all_authors.txt","r","utf-8")
+    infile = codecs.open("data/authors.txt","r","utf-8")
     infile.readline()
     all_authors_dict = {}
     for line in infile:
