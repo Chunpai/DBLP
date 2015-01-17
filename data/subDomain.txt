@@ -1,0 +1,24 @@
+1|Algorithms & Theory
+2|Security & Privacy
+3|Hardware & Architecture
+4|Software Engineering
+5|Artificial Intelligence
+6|Machine Learning & Pattern Recognition
+7|Data Mining
+8|Information Retrieval
+9|Natural Language & Speech
+10|Graphics
+11|Computer Vision
+12|Human-Computer Interaction
+13|Multimedia
+14|Networks & Communications
+15|World Wide Web
+16|Distributed & Parallel Computing
+17|Operating Systems
+18|Databases
+19|Real-Time & Embedded Systems
+20|Simulation
+21|Bioinformatics & Computational Biology
+22|Scientific Computing
+23|Computer Education
+24|Programming Languages
