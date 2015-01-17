@@ -1,3 +1,4 @@
+#run deepwalk module to get the latent dimension 
 from subprocess import call
 import multiprocessing as mp
 

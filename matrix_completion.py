@@ -2,17 +2,20 @@ import random
 import numpy as np
 
 def read_matrix():
-    infile = open("data/2014/combined_matrix.txt")
+    infile = open("data/2014/combined_matrix.txt","r")
     matrix = []
+    authors_index = []
     for line in infile:
-        fields = line.strip().split(' ')[1:]
+        fields = line.strip().split(' ')
+        authors_index.append(fields[0])
+        fields = fields[1:]
         fields = map(float, fields)
         matrix.append(fields)
     infile.close()
     #print matrix
     matrix = np.array(matrix)
     print matrix.shape
-    return matrix
+    return matrix, authors_index
 
 
 def random_sample():
@@ -44,7 +47,7 @@ def random_sample():
 
 
 #use SGD to do the matrix factorization
-def matrix_factorization(R, P, Q, K, steps=2000, alpha= 0.005, beta= 0.02):
+def matrix_factorization(R, P, Q, K, steps=1000, alpha= 0.01, beta= 0.01):
     Q = Q.T
     #iteration = 0
     lowest_error = 300000
@@ -53,6 +56,8 @@ def matrix_factorization(R, P, Q, K, steps=2000, alpha= 0.005, beta= 0.02):
         #new_alpha = alpha / (step*len(random_numbers)+1)
         #new_alpha = alpha / (step*40+1)
         new_alpha = alpha
+        if step >= 500:
+            new_alpha = 0.001
         print('step:'+str(step))
         print 'step_length',new_alpha
         for i in xrange(len(R)):
@@ -64,10 +69,10 @@ def matrix_factorization(R, P, Q, K, steps=2000, alpha= 0.005, beta= 0.02):
                     #print 'eij+'+str(eij)
                     for k in xrange(K):
                         #print P[i][k],Q[k][j]
-                        #P_temp = P[i][k]
+                        P_temp = P[i][k]
                         #Q_temp = Q[k][j]
                         P[i][k] = P[i][k] + new_alpha * (2 * eij * Q[k][j] - beta * P[i][k])
-                        Q[k][j] = Q[k][j] + new_alpha * (2 * eij * P[i][k] - beta * Q[k][j])
+                        Q[k][j] = Q[k][j] + new_alpha * (2 * eij * P_temp - beta * Q[k][j])
         #eR = np.dot(P,Q)
         e = 0
         for i in xrange(len(R)):
@@ -89,30 +94,27 @@ def matrix_factorization(R, P, Q, K, steps=2000, alpha= 0.005, beta= 0.02):
 
 
 if __name__ == "__main__":
-    original_matrix = read_matrix()
+    original_matrix, authors_index = read_matrix()
     training_matrix = random_sample()
     row, col = training_matrix.shape
-    rank = 2 
+    rank = 16 
     P = np.random.normal(0,1,(row,rank))
     Q = np.random.normal(0,1,(col,rank))
     NP, NQ = matrix_factorization(training_matrix, P, Q, rank)
     completed_matrix = np.dot(NP,NQ.T)
+    row, col = completed_matrix.shape
     #outfile1 = open("data/2014/mf/original_matrix.txt","w")
-
-    outfile = open("data/2014/mf/recovered_matrix.txt","w")
-    for row in completed_matrix:
-        for v in row:
-            outfile.write(v+' ')
+    
+        
+    outfile = open("data/2014/mf/new_recovered_matrix16.txt","w")
+    for i in range(row):
+        outfile.write(str(authors_index[i])+' ')
+        for j in range(col):
+            outfile.write(str(completed_matrix[i][j])+' ')
         outfile.write('\n')
     outfile.close()
     #evaluation(original_matrix, completed_matrix)
-
-
-
-
-
-
-
+    
 
 
 
