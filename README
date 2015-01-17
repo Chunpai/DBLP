@@ -1,5 +1,7 @@
-Files Description:
+Files Description & Execution Order:
 1. extractInProceedings.py     :  extract all inproceedings from dblp.xml to data/2014/2014inproceedings.xml
 2. extractByYear.py            :  extract inproceedings from data/2014/2014inproceedings.xml by year
-
+3. build_authors_dict.py       :
+4. create_edgelist.py          :
+5. latentDim.py                :
 
