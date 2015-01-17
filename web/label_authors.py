@@ -3,6 +3,8 @@ import codecs
 from numpy import array
 from scipy.cluster.vq import kmeans
 import numpy as np
+import collections
+
 
 #data = array([1,1,1,1,2,2,2,2,3,3,3,3])
 #kmeans(data,3)
@@ -45,13 +47,14 @@ def kmeans_clustering(author_interest_dict):
             interests = []
             for i in author_interest_dict[author].itervalues():
                 interests.append(i)
-            r1,r2 = kmeans(array(interests),3)
+            r1,r2 = kmeans(array(interests),3)   #r1 is a list of center points
             index = np.where(r1 == r1.max())[0][0]
             for key,value in author_interest_dict[author].iteritems():
                 distances = abs(r1-value)
                 index2 = np.where(distances == distances.min())[0][0]
                 if index2 == index:
                     author_top_interest_dict[author][value] = key
+    infile.close()
     return author_top_interest_dict
          
         
@@ -65,3 +68,22 @@ if __name__ == "__main__":
     print author_interest_dict['Mihir Bellare']
     author_top_interest_dict = kmeans_clustering(author_interest_dict)
     print author_top_interest_dict['Mihir Bellare']
+    infile = codecs.open('labeled_authors_info.txt','r','utf-8')
+    outfile = codecs.open('new_labeled_authors_info.txt','w','utf-8')
+    for line in infile:
+        fields = line.strip().split('|')
+        author = fields[0]
+        outfile.write(author+'|')
+        interests = author_top_interest_dict[author]
+        ordered_interests = collections.OrderedDict(sorted(interests.items()))
+        for i in ordered_interests:
+            outfile.write(ordered_interests[i]+'|')
+        outfile.write('\n')
+    infile.close()
+    outfile.close()
+
+
+
+
+
+
